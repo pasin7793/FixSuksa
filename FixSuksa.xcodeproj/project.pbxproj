@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		9454790F2A4BB366003BA582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9454790E2A4BB366003BA582 /* AppDelegate.swift */; };
 		945479112A4BB366003BA582 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945479102A4BB366003BA582 /* SceneDelegate.swift */; };
-		945479132A4BB366003BA582 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945479122A4BB366003BA582 /* ViewController.swift */; };
+		945479132A4BB366003BA582 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945479122A4BB366003BA582 /* MainVC.swift */; };
 		945479182A4BB368003BA582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945479172A4BB368003BA582 /* Assets.xcassets */; };
 		9454791B2A4BB368003BA582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945479192A4BB368003BA582 /* LaunchScreen.storyboard */; };
 		945479262A4BB368003BA582 /* FixSuksaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945479252A4BB368003BA582 /* FixSuksaTests.swift */; };
 		945479302A4BB368003BA582 /* FixSuksaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9454792F2A4BB368003BA582 /* FixSuksaUITests.swift */; };
 		945479322A4BB368003BA582 /* FixSuksaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945479312A4BB368003BA582 /* FixSuksaUITestsLaunchTests.swift */; };
+		945479422A4BB85B003BA582 /* BlueToothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945479412A4BB85B003BA582 /* BlueToothSerial.swift */; };
+		945479452A4BBC85003BA582 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 945479442A4BBC85003BA582 /* Then */; };
+		945479482A4BBC93003BA582 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 945479472A4BBC93003BA582 /* SnapKit */; };
+		9454794D2A4BBDB2003BA582 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9454794C2A4BBDB2003BA582 /* ScanVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,7 @@
 		9454790B2A4BB366003BA582 /* FixSuksa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixSuksa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9454790E2A4BB366003BA582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		945479102A4BB366003BA582 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		945479122A4BB366003BA582 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		945479122A4BB366003BA582 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		945479172A4BB368003BA582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9454791A2A4BB368003BA582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9454791C2A4BB368003BA582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		9454792B2A4BB368003BA582 /* FixSuksaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixSuksaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9454792F2A4BB368003BA582 /* FixSuksaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixSuksaUITests.swift; sourceTree = "<group>"; };
 		945479312A4BB368003BA582 /* FixSuksaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixSuksaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		945479412A4BB85B003BA582 /* BlueToothSerial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueToothSerial.swift; sourceTree = "<group>"; };
+		9454794C2A4BBDB2003BA582 /* ScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945479452A4BBC85003BA582 /* Then in Frameworks */,
+				945479482A4BBC93003BA582 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +105,9 @@
 		9454790D2A4BB366003BA582 /* FixSuksa */ = {
 			isa = PBXGroup;
 			children = (
-				9454790E2A4BB366003BA582 /* AppDelegate.swift */,
-				945479102A4BB366003BA582 /* SceneDelegate.swift */,
-				945479122A4BB366003BA582 /* ViewController.swift */,
-				945479172A4BB368003BA582 /* Assets.xcassets */,
-				945479192A4BB368003BA582 /* LaunchScreen.storyboard */,
-				9454791C2A4BB368003BA582 /* Info.plist */,
+				945479502A4BBE24003BA582 /* Source */,
+				9454794F2A4BBE18003BA582 /* Resource */,
+				9454794E2A4BBE0D003BA582 /* Support */,
 			);
 			path = FixSuksa;
 			sourceTree = "<group>";
@@ -124,6 +129,75 @@
 			path = FixSuksaUITests;
 			sourceTree = "<group>";
 		};
+		9454793E2A4BB81D003BA582 /* BlueToothSerial */ = {
+			isa = PBXGroup;
+			children = (
+				945479412A4BB85B003BA582 /* BlueToothSerial.swift */,
+			);
+			path = BlueToothSerial;
+			sourceTree = "<group>";
+		};
+		945479492A4BBD89003BA582 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				945479122A4BB366003BA582 /* MainVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9454794A2A4BBD8D003BA582 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				9454794C2A4BBDB2003BA582 /* ScanVC.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		9454794B2A4BBDA6003BA582 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9454790E2A4BB366003BA582 /* AppDelegate.swift */,
+				945479102A4BB366003BA582 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9454794E2A4BBE0D003BA582 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9454791C2A4BB368003BA582 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9454794F2A4BBE18003BA582 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				945479192A4BB368003BA582 /* LaunchScreen.storyboard */,
+				945479172A4BB368003BA582 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		945479502A4BBE24003BA582 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				945479512A4BBE30003BA582 /* Scene */,
+				9454794B2A4BBDA6003BA582 /* App */,
+				9454793E2A4BB81D003BA582 /* BlueToothSerial */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		945479512A4BBE30003BA582 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				9454794A2A4BBD8D003BA582 /* Scan */,
+				945479492A4BBD89003BA582 /* Main */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +214,10 @@
 			dependencies = (
 			);
 			name = FixSuksa;
+			packageProductDependencies = (
+				945479442A4BBC85003BA582 /* Then */,
+				945479472A4BBC93003BA582 /* SnapKit */,
+			);
 			productName = FixSuksa;
 			productReference = 9454790B2A4BB366003BA582 /* FixSuksa.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +290,10 @@
 				Base,
 			);
 			mainGroup = 945479022A4BB366003BA582;
+			packageReferences = (
+				945479432A4BBC85003BA582 /* XCRemoteSwiftPackageReference "Then" */,
+				945479462A4BBC93003BA582 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 9454790C2A4BB366003BA582 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,8 +336,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				945479132A4BB366003BA582 /* ViewController.swift in Sources */,
+				945479132A4BB366003BA582 /* MainVC.swift in Sources */,
+				9454794D2A4BBDB2003BA582 /* ScanVC.swift in Sources */,
 				9454790F2A4BB366003BA582 /* AppDelegate.swift in Sources */,
+				945479422A4BB85B003BA582 /* BlueToothSerial.swift in Sources */,
 				945479112A4BB366003BA582 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +676,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		945479432A4BBC85003BA582 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		945479462A4BBC93003BA582 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		945479442A4BBC85003BA582 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 945479432A4BBC85003BA582 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		945479472A4BBC93003BA582 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 945479462A4BBC93003BA582 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 945479032A4BB366003BA582 /* Project object */;
 }
