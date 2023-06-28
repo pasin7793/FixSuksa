@@ -1,7 +1,7 @@
 import UIKit
 import CoreBluetooth
 
-var serial : BluetoothSerial!
+var serial : BluetoothSerial! = BluetoothSerial.init()
 
 protocol BluetoothSerialDelegate : AnyObject {
     func serialDidDiscoverPeripheral(peripheral : CBPeripheral, RSSI : NSNumber?)

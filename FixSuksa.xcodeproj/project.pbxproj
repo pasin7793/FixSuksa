@@ -19,6 +19,7 @@
 		945479452A4BBC85003BA582 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 945479442A4BBC85003BA582 /* Then */; };
 		945479482A4BBC93003BA582 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 945479472A4BBC93003BA582 /* SnapKit */; };
 		9454794D2A4BBDB2003BA582 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9454794C2A4BBDB2003BA582 /* ScanVC.swift */; };
+		945479592A4BC2C2003BA582 /* ScanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945479582A4BC2C2003BA582 /* ScanTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,6 @@
 		945479122A4BB366003BA582 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		945479172A4BB368003BA582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9454791A2A4BB368003BA582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9454791C2A4BB368003BA582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		945479212A4BB368003BA582 /* FixSuksaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixSuksaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		945479252A4BB368003BA582 /* FixSuksaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixSuksaTests.swift; sourceTree = "<group>"; };
 		9454792B2A4BB368003BA582 /* FixSuksaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixSuksaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +53,8 @@
 		945479312A4BB368003BA582 /* FixSuksaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixSuksaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		945479412A4BB85B003BA582 /* BlueToothSerial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueToothSerial.swift; sourceTree = "<group>"; };
 		9454794C2A4BBDB2003BA582 /* ScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
+		945479542A4BBF04003BA582 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../.Trash/Info.plist; sourceTree = "<group>"; };
+		945479582A4BC2C2003BA582 /* ScanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				9454794C2A4BBDB2003BA582 /* ScanVC.swift */,
+				945479582A4BC2C2003BA582 /* ScanTableViewCell.swift */,
 			);
 			path = Scan;
 			sourceTree = "<group>";
@@ -165,7 +168,7 @@
 		9454794E2A4BBE0D003BA582 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				9454791C2A4BB368003BA582 /* Info.plist */,
+				945479542A4BBF04003BA582 /* Info.plist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				9454794D2A4BBDB2003BA582 /* ScanVC.swift in Sources */,
 				9454790F2A4BB366003BA582 /* AppDelegate.swift in Sources */,
 				945479422A4BB85B003BA582 /* BlueToothSerial.swift in Sources */,
+				945479592A4BC2C2003BA582 /* ScanTableViewCell.swift in Sources */,
 				945479112A4BB366003BA582 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,7 +515,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZW43FFWC7M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FixSuksa/Info.plist;
+				INFOPLIST_FILE = FixSuksa/Support/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -540,7 +544,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZW43FFWC7M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FixSuksa/Info.plist;
+				INFOPLIST_FILE = FixSuksa/Support/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
