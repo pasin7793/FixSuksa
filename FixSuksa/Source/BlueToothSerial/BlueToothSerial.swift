@@ -1,7 +1,7 @@
 import UIKit
 import CoreBluetooth
 
-var serial : BluetoothSerial! = BluetoothSerial.init()
+var serial: BluetoothSerial!
 
 protocol BluetoothSerialDelegate : AnyObject {
     func serialDidDiscoverPeripheral(peripheral : CBPeripheral, RSSI : NSNumber?)
@@ -19,7 +19,7 @@ class BluetoothSerial: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
     var delegate : BluetoothSerialDelegate?
     
     // centralManager은 블루투스 주변기기를 검색하고 연결하는 역할을 수행합니다.
-    var centralManager : CBCentralManager!
+    var centralManager: CBCentralManager!
     
     // pendingPeripheral은 현재 연결을 시도하고 있는 블루투스 주변기기를 의미합니다.
     var pendingPeripheral : CBPeripheral?

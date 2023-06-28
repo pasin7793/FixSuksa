@@ -17,7 +17,6 @@ final class ScanVC: UIViewController, BluetoothSerialDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        serial.centralManager = CBCentralManager(delegate: serial, queue: nil)
         addView()
         setLayout()
         peripheralList = []

@@ -24,6 +24,7 @@ final class MainVC: UIViewController, BluetoothSerialDelegate{
         view.backgroundColor = .white
         addView()
         setLayout()
+        serial = BluetoothSerial.init()
     }
 
     func addView(){
